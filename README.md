@@ -20,5 +20,5 @@ $ npm start
 ```
 Build and deploy .dmg:
 ```
-$ npm build
+$ npm run build
 ```

@@ -52,12 +52,12 @@ $('.btn').click((e) => {
         startTimer = false;
         currentTime = modeObject[mode];
     }
+    timerDiv.innerHTML = secondsToTime(currentTime);
 });
 
 // Listen to the 'timer-change' event
 ipcRenderer.on('timer-change', (event, t) => {
     // Print out the time
-    timerDiv.innerHTML = secondsToTime(currentTime);
 
     // Execute every second
     let timer = setInterval(() => {
